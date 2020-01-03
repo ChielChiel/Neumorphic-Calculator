@@ -90,7 +90,11 @@ button {
   text-align: center;
   width: 70px;
   height: 70px;
-  border: 2px solid gray;
+  
+  /*border around numbers on numpad*/
+  
+  /*border: 2px solid gray;*/
+ 
   color: gray;
   font-size: 25px;
   font-weight: 200;
