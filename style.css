@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "DigitalNumbers";
+  src: url("/Neumorphic-Calculator/DigitalNumbers-Regular.ttf");
+}
+
+* {
+  font-family: 'DigitalNumbers';
+  font-weight: 300;
+}
+
+body {
+  background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+}
+
+#container {
+  width: 340px;
+  height: 620px;
+  border-spacing: 10px;
+  /*--------------------------------------*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*-----------------------------------------*/
+  background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+  /* box-shadow: 6px 6px 12px #b3b3b3, 6px 6px 12px #b3b3b3 inset,
+              -6px -6px 12px #ffffff, -6px -6px 12px #ffffff inset; */
+  box-shadow: 6px 6px 12px #b3b3b3, -6px -6px 12px #b3b3b3 inset,
+    -6px -6px 12px #ffffff, 6px 6px 12px #ffffff inset;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+#comm {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+  display: none;
+}
+
+#output {
+  width: 97.86%;
+  height: 130px;
+  padding: 3px;
+  background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+  /* box-shadow: 6px 6px 12px #b3b3b3, 6px 6px 12px #b3b3b3 inset,
+              -6px -6px 12px #ffffff, -6px -6px 12px #ffffff inset; */
+  box-shadow: 6px 6px 12px #b3b3b3, -6px -6px 12px #b3b3b3 inset,
+    -6px -6px 12px #ffffff, 6px 6px 12px #ffffff inset;
+  padding: 10px;
+  font-size: 90px;
+  text-align: right;
+  border-radius: 6px;
+}
+
+#DDD {
+  color: gray;
+  font-family: 'Roboto';
+  text-shadow: -6px -6px 8px #ffffff,
+    6px 6px 8px #b3b3b3;
+  font-weight: 300;
+}
+
+#numpad {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 17px;
+}
+
+table {
+  border: 1px solid white;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+td {
+  margin: 10px;
+}
+
+button {
+  border-spacing: 10px;
+  margin: 7px;
+  border-radius: 35px;
+  background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+  box-shadow: 6px 6px 12px #b3b3b3, 6px 6px 12px #b3b3b3 inset,
+    -6px -6px 12px #ffffff, -6px -6px 12px #ffffff inset;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid gray;
+  color: gray;
+  font-size: 25px;
+  font-weight: 200;
+  /* animation */
+  -webkit-transition: -webkit-transform 0.05s ease-in;
+  -moz-transition: -moz-transform 0.05s ease-in;
+  -o-transition: -o-transform 0.05s ease-in;
+  -ms-transition: -ms-transform 0.05s ease-in;
+  transition: transform 0.05s ease-in;
+  transform-origin: center;
+}
+
+button:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+button:hover {
+  border-color: grey;
+  background-color: lightgray;
+}
+
+#n0 {
+  width: 147px;
+}
+
+#nkom {
+  margin-left: 14px;
+}
+
+#stand {
+  display: none;
+}
+
+.madeByChielChiel {
+  text-decoration: none;
+  color: grey;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Neumorphic calculator of ChielChiel</title>
+  <link id="cssLink" href="style.css" style="text/css" rel="stylesheet">
+  <script id="jsLink" src="script.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet">
+
+
+
+  <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="container">
+      <div id="output"><span id="DDD">0</span></div>
+      <div id="numpad">
+
+        <table id="stand">
+          <tr>
+            <button onclick="operation('ac');" id="schoonmaak">AC</button>
+            <button onclick="makeNum('-')" id="plim">+/-</button>
+            <button onclick="operation('procent'); doen++" id="percent">&percnt;</button>
+            <button onclick="operation('/'); doen++" class="spec" id="delen">&#247;</button>
+          </tr>
+          <tr>
+            <button onclick="makeNum(7)" class="numb" id="n7">7</button>
+            <button onclick="makeNum(8)" class="numb" id="n8">8</button>
+            <button onclick="makeNum(9)" class="numb" id="n9">9</button>
+            <button onclick="operation('*'); doen++" class="spec" id="malen">&times;</button>
+          </tr>
+          <tr>
+            <button onclick="makeNum(4)" class="numb" id="n4">4</button>
+            <button onclick="makeNum(5)" class="numb" id="n5">5</button>
+            <button onclick="makeNum(6)" class="numb" id="n6">6</button>
+            <button onclick="operation('-'); doen++" class="spec" id="aftrekken">&minus;</button>
+          </tr>
+          <tr>
+            <button onclick="makeNum(1)" class="numb" id="n3">1</button>
+            <button onclick="makeNum(2)" class="numb" id="n2">2</button>
+            <button onclick="makeNum(3)" class="numb" id="n1">3</button>
+            <button onclick="operation('+'); doen++" class="spec" id="optellen">&plus;</button>
+          </tr>
+          <tr>
+            <button onclick="makeNum(0)" class="numb" id="n0">0</button>
+            <button onclick='makeNum(".")' class="numb" id="nkom">,</button>
+            <button onclick="check();" id="check" class="spec">&equals;</button>
+          </tr>
+          <tr>
+
+          </tr>
+        </table>
+
+      </div>
+
+
+    </div>
+
+<span class="madeByChielChiel">Developed by <b><a href="https://github.com/chielchiel/">ChielChiel</a></b></span>
+
+</body>
+
+</html>
